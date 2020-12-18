@@ -10,15 +10,9 @@ git clone PROJECT_URL
 
 ### Copy source files
 
-xcopy KGSplit\src KGSplit\export\Analyzer\src\ /E/H
+xcopy KGSplit\src KGSplit\export\MODULE\src\ /E/H
 
-xcopy KGSplit\src KGSplit\export\Comparer\src\ /E/H
-
-xcopy KGSplit\src KGSplit\export\Exporter\src\ /E/H
-
-xcopy KGSplit\src KGSplit\export\Loader\src\ /E/H
-
-xcopy KGSplit\src KGSplit\export\Split\src\ /E/H
+where MODULE=Analyzer, Comparer, Exporter, Loader, Split
 
 ### Add Gradle wrapper and build
 
