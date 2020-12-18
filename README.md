@@ -45,9 +45,9 @@ build\install\kgsplit_loader\bin\kgsplit_loader -db ..\..\FB13\ -i ..\..\..\Open
 
 cd KGSplit\export\Analyzer
 
-build\install\kgsplit_analyzer\bin\kgsplit_analyzer -db ..\..\FB13\ -c Indeg_KS_Each_.05 Outdeg_KS_Each_.05 NonZero_All > ..\..\FB13_Analysis_KS_.05.txt
+build\install\kgsplit_analyzer\bin\kgsplit_analyzer -db ..\\..\FB13\ -c Indeg_KS_Each_.05 Outdeg_KS_Each_.05 NonZero_All > ..\\..\FB13_Analysis_KS_.05.txt
 
-build\install\kgsplit_analyzer\bin\kgsplit_analyzer -db ..\..\FB13\ -c Indeg_C_Each_.05 Outdeg_C_Each_.05 NonZero_All > ..\..\FB13_Analysis_C_.05.txt
+build\install\kgsplit_analyzer\bin\kgsplit_analyzer -db ..\\..\FB13\ -c Indeg_C_Each_.05 Outdeg_C_Each_.05 NonZero_All > ..\\..\FB13_Analysis_C_.05.txt
 
 It will run two analyses over the training split with respect to the original graph. The first one uses Kolmogorov-Smirnov with significance level .05 for indegrees and outdegrees of each predicate. Furthermore, we analyze whether there are isolated nodes in the training split regardless of predicate, i.e., nodes whose all incoming and outgoing edges are not in training.
 
@@ -55,8 +55,8 @@ It will run two analyses over the training split with respect to the original gr
 
 cd KGSplit\export\Split
 
-build\install\kgsplit_split\bin\kgsplit_split -db ..\..\FB13\ -c Indeg_KS_Each_.05 Outdeg_KS_Each_.05 NonZero_All Percentage_80_Each -n split_KS_zerofive > ..\..\FB13_Split_KS_.05.txt
+build\install\kgsplit_split\bin\kgsplit_split -db ..\\..\FB13\ -c Indeg_KS_Each_.05 Outdeg_KS_Each_.05 NonZero_All Percentage_80_Each -n split_KS_zerofive > ..\\..\FB13_Split_KS_.05.txt
 
-build\install\kgsplit_split\bin\kgsplit_split -db ..\..\FB13\ -c Indeg_C_Each_.05 Outdeg_C_Each_.05 NonZero_All Percentage_80_Each -n split_C_zerofive > ..\..\FB13_Split_C_.05.txt
+build\install\kgsplit_split\bin\kgsplit_split -db ..\\..\FB13\ -c Indeg_C_Each_.05 Outdeg_C_Each_.05 NonZero_All Percentage_80_Each -n split_C_zerofive > ..\\..\FB13_Split_C_.05.txt
 
 These splits will be stored in properties: split_KS_zerofive and split_C_zerofive, respectively. We enforce that the percentage of total triples of each predicate in the training split should remain above 80%.
