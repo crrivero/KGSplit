@@ -22,6 +22,8 @@ xcopy KGSplit\src KGSplit\export\Split\ /E/H
 
 ### Add Gradle wrapper and build
 
+#### Analyzer
+
 cd KGSplit\export\Analyzer\
 
 gradle wrapper
@@ -32,6 +34,7 @@ gradlew install
 
 cd ..\\..\\..
 
+#### Comparer
 
 cd KGSplit\export\Comparer\
 
@@ -41,8 +44,9 @@ gradlew build
 
 gradlew install
 
-cd ..\..\..
+cd ..\\..\\..
 
+#### Exporter
 
 cd KGSplit\export\Exporter\
 
@@ -52,8 +56,9 @@ gradlew build
 
 gradlew install
 
-cd ..\..\..
+cd ..\\..\\..
 
+#### Loader
 
 cd KGSplit\export\Loader\
 
@@ -63,8 +68,9 @@ gradlew build
 
 gradlew install
 
-cd ..\..\..
+cd ..\\..\\..
 
+#### Split
 
 cd KGSplit\export\Split\
 
@@ -74,4 +80,4 @@ gradlew build
 
 gradlew install
 
-cd ..\..\..
+cd ..\\..\\..
