@@ -72,3 +72,11 @@ build\install\kgsplit_comparer\bin\kgsplit_comparer -db ..\\..\FB13\ -ns split -
 build\install\kgsplit_comparer\bin\kgsplit_comparer -db ..\\..\FB13\ -ns split_KS_zerofive -nt split_C_zerofive -ps !0 -pt !0 >> ..\\..\FB13_Comparison.txt
 
 Three different splits (split, split_KS_zerofive, split_C_zerofive) will be compared. The '!0' means 'exclude training', i.e., the union of validation and test splits will be compared.
+
+## Exporter
+
+cd KGSplit\export\Exporter
+
+build\install\kgsplit_exporter\bin\kgsplit_exporter -db ..\\..\FB13\ -o ..\\..\FB13_12.graphml -f GraphML -r 12 -n split split_KS_zerofive split_C_zerofive
+
+It will create the 'FB13_12.graphml' file containing all triples in FB13 for predicate 12 with the split information previously computed.
