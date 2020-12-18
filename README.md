@@ -22,62 +22,17 @@ xcopy KGSplit\src KGSplit\export\Split\src\ /E/H
 
 ### Add Gradle wrapper and build
 
-#### Analyzer
+Save the following as a .bat file.
 
-cd KGSplit\export\Analyzer\
 
-gradle wrapper
+cd KGSplit\export\MODULE\
 
-gradlew build
+call gradle wrapper
 
-gradlew install
+call gradlew build
 
-cd ..\\..\\..
-
-#### Comparer
-
-cd KGSplit\export\Comparer\
-
-gradle wrapper
-
-gradlew build
-
-gradlew install
+call gradlew install
 
 cd ..\\..\\..
 
-#### Exporter
-
-cd KGSplit\export\Exporter\
-
-gradle wrapper
-
-gradlew build
-
-gradlew install
-
-cd ..\\..\\..
-
-#### Loader
-
-cd KGSplit\export\Loader\
-
-gradle wrapper
-
-gradlew build
-
-gradlew install
-
-cd ..\\..\\..
-
-#### Split
-
-cd KGSplit\export\Split\
-
-gradle wrapper
-
-gradlew build
-
-gradlew install
-
-cd ..\\..\\..
+where MODULE=Analyzer, Comparer, Exporter, Loader, Split
