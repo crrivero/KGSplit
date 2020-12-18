@@ -60,3 +60,15 @@ build\install\kgsplit_split\bin\kgsplit_split -db ..\\..\FB13\ -c Indeg_KS_Each_
 build\install\kgsplit_split\bin\kgsplit_split -db ..\\..\FB13\ -c Indeg_C_Each_.05 Outdeg_C_Each_.05 NonZero_All Percentage_80_Each -n split_C_zerofive > ..\\..\FB13_Split_C_.05.txt
 
 These splits will be stored in properties: split_KS_zerofive and split_C_zerofive, respectively. We enforce that the percentage of total triples of each predicate in the training split should remain above 80%.
+
+## Compare splits
+
+cd KGSplit\export\Comparer
+
+build\install\kgsplit_comparer\bin\kgsplit_comparer -db ..\\..\FB13\ -ns split -nt split_C_zerofive -ps !0 -pt !0 >> ..\\..\FB13_Comparison.txt
+
+build\install\kgsplit_comparer\bin\kgsplit_comparer -db ..\\..\FB13\ -ns split -nt split_KS_zerofive -ps !0 -pt !0 >> ..\\..\FB13_Comparison.txt
+
+build\install\kgsplit_comparer\bin\kgsplit_comparer -db ..\\..\FB13\ -ns split_KS_zerofive -nt split_C_zerofive -ps !0 -pt !0 >> ..\\..\FB13_Comparison.txt
+
+Three different splits (split, split_KS_zerofive, split_C_zerofive) will be compared. The '!0' means 'exclude training', i.e., the union of validation and test splits will be compared.
