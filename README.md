@@ -8,6 +8,8 @@ JDK 9+ and Gradle 6.6+. Optional: Git and Gephi.
 
 git clone PROJECT_URL
 
+### Copy source files
+
 xcopy KGSplit\src KGSplit\export\Analyzer\ /E/H
 
 xcopy KGSplit\src KGSplit\export\Comparer\ /E/H
@@ -18,6 +20,7 @@ xcopy KGSplit\src KGSplit\export\Loader\ /E/H
 
 xcopy KGSplit\src KGSplit\export\Split\ /E/H
 
+### Add Gradle wrapper and build
 
 cd KGSplit\export\Analyzer\
 
