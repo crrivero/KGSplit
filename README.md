@@ -30,3 +30,14 @@ call gradlew install
 cd ..\\..\\..
 
 where MODULE=Analyzer, Comparer, Exporter, Loader, Split
+
+## Load graph (training, validation and test)
+
+cd KGSplit\export\Loader
+
+build\install\kgsplit_loader\bin\kgsplit_loader -db ..\..\FB13\ -i ..\..\..\OpenKE\benchmarks\FB13\train2id.txt -f NUMERIC -t sop -s \t -p 0
+
+build\install\kgsplit_loader\bin\kgsplit_loader -db ..\..\FB13\ -i ..\..\..\OpenKE\benchmarks\FB13\valid2id.txt -f NUMERIC -t sop -s \t -p 1
+
+build\install\kgsplit_loader\bin\kgsplit_loader -db ..\..\FB13\ -i ..\..\..\OpenKE\benchmarks\FB13\test2id.txt -f NUMERIC -t sop -s \t -p 2
+
