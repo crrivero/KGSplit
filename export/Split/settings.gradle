@@ -1,0 +1,8 @@
+// Copy the src folder.
+// Set JAVA_HOME pointing to the specific Java JDK/JRE to use.
+// Add the Gradle Wrapper to this folder: 'gradle wrapper'.
+// gradlew build
+// gradlew installDist
+// Run application: {Project_Name}\build\install\Project_Name\bin\Project_Name
+
+rootProject.name = 'kgsplit_split'

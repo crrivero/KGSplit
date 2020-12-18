@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:21.0'
+    implementation 'org.neo4j:neo4j:3.5.20'
+    implementation 'commons-cli:commons-cli:1.4'
+    
+    // Testing.
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+}
