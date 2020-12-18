@@ -30,7 +30,7 @@ gradlew build
 
 gradlew install
 
-cd ..\..\..
+cd ..\\..\\..
 
 
 cd KGSplit\export\Comparer\
