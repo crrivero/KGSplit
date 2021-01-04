@@ -62,7 +62,7 @@ public class NumericLoader {
 			Iterator<BatchRelationship> it = inserter.getRelationships(s).iterator();
 			while (found == null && it.hasNext()) {
 				BatchRelationship r = it.next();
-				if (r.getEndNode()==o && r.getType().equals(p))
+				if (r.getStartNode()==s && r.getEndNode()==o && r.getType().equals(p))
 					found=r;
 			}
 			
