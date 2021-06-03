@@ -1,4 +1,4 @@
-# KGSplit
+# KGWrangler
 Analyzing and Splitting Knowledge Graphs with Statistical Guarantees.
 
 ## Installation prereqs
